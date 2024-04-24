@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* TEXT SETTINGS */
+
+h1,
+p {
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  margin: 50px;
+  font-size: 25px;
+}
+
+h1 {
+  font-size: 50pt;
+}
+
+.longP {
+  font-size: 25px;
+}
+
+p::first-letter {
+  color: rgb(27, 241, 27);
+  font-size: 35px;
+}
+
+/* REVEAL ANIMATION */
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* CONTAINER */
+
+.container {
+  height: 95vh;
+  width: 95vw;
+  /*border: solid;*/
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+/* GENERAL DIV CHILDREN */
+
+.container div {
+  /*border: solid;*/
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container .singleSection {
+  width: 100%;
+}
+
+.container .oneFourth {
+  width: 25%;
+}
+
+.container .threeFourth {
+  width: 75%;
+}
+
+.singleSection p {
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 25pt;
+}
+
+.intro {
+  padding-top: 200px;
+}
+
+/* IMAGE CONTAINER */
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.imageContainer img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.imageContainer .notFill {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* MATRIX */
+
+.topMatrix {
+  position: absolute;
+  top: -100px;
+  left: 140px;
+}
+
+/* BORDERS */
+
+.border1 {
+  position: absolute;
+  left: 200px;
+  top: 1000px;
+}
+
+.border2 {
+  position: absolute;
+  right: 200px;
+  top: 1550px;
+}
